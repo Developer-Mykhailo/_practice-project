@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tours to the carpathians from Lviv" />
+    <title>Tours to the carpathians from Lviv</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- normalize -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a
+            href="./index.html"
+            class="logo header-logo"
+            aria-label="website's logo; link to main page"
+          >
+            <svg class="icon-logo" width="60" height="60">
+              <use href="./image/sprite_icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="header-lst">
+            <li class="header-item">
+              <a
+                href="#"
+                class="header-link current"
+                aria-label="link to the page About us"
+                >About us</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link" aria-label="link to the page Tours"
+                >Tours</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link" aria-label="link to the page Reviews"
+                >Reviews</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link" aria-label="link to the page Gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link" aria-label="link to the page Contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+          <button class="hero-burger" type="button" aria-label="button to open menu">
+            <svg class="icon-burger" width="40" height="40">
+              <use href="./image/sprite_icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-ttl">
+            <span>Tours to </span> <span class="break">the</span> capathians from Lviv
+          </h1>
+          <p class="hero-descr">
+            Journeys to the very heart of the Carpathians for those who want a real reboot
+          </p>
+          <button type="button" class="rect-btn" aria-label="button to book a tour">
+            Book a tour
+          </button>
+
+          <ul class="social-lst">
+            <li class="socia-itm">
+              <a href="#" class="social-link" aria-label="link to telegram">
+                <svg class="social-icon" width="40" height="40">
+                  <use href="./image/sprite_icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socia-itm">
+              <a href="#" class="social-link" aria-label="link to instadram">
+                <svg class="social-icon" width="40" height="40">
+                  <use href="./image/sprite_icons.svg#icon-instadram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socia-itm">
+              <a href="#" class="social-link" aria-label="link to facebook">
+                <svg class="social-icon" width="40" height="40">
+                  <use href="./image/sprite_icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2 class="about-ttl">About us</h2>
+          <p class="about-descr">
+            Travel is our life. We have been organizing tours to the Carpathians since
+            2007 and have never been bored for a single day. The Carpathians are many
+            interesting and unexplored places that are worth visiting and showing them to
+            others.
+          </p>
+          <p class="about-descr">
+            Coming to the Carpathians will make you forget about the polluted, noisy world
+            and enjoy untouched nature. From picturesque forests to clean rivers and lakes
+            and Carpathian streams between the mountains, which offer magical landscapes
+            and allow you to forget about all problems and unnecessary thoughts.
+          </p>
+        </div>
+      </section>
+
+      <section class="adv">
+        <div class="container adv-container">
+          <h2 class="adv-ttl">Our advantages</h2>
+          <ul class="adv-lst">
+            <li class="adv-itm">author's tours</li>
+            <li class="adv-itm">individual approach</li>
+            <li class="adv-itm">affordable prices</li>
+            <li class="adv-itm">comfortable transfer</li>
+            <li class="adv-itm">professional guides</li>
+            <li class="adv-itm">accommodation in hotels from 3+ *</li>
+          </ul>
+
+          <div class="adv-box-picture">
+            <picture class="adv-picture">
+              <source
+                media="(max-width: 768px)"
+                srcset="
+                  ./image/adv/adv-bg-mb-min.jpg    1x,
+                  ./image/adv/adv-bg-mb@2x-min.jpg 2x
+                "
+              />
+              <img
+                src="./image/adv/adv-bg-mb-min.jpg"
+                alt="nature"
+                width="315"
+                height="554"
+              />
+            </picture>
+
+            <!-- pictures for tablet -->
+
+            <picture class="adv-picture">
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./image/adv/adv-bg-tab-1-min.jpg    1x,
+                  ./image/adv/adv-bg-tab-1@2x-min.jpg 2x
+                "
+              />
+              <img src="./image/adv/adv-bg-tab-1-min.jpg" alt="nature" />
+            </picture>
+
+            <picture class="adv-picture">
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./image/adv/adv-bg-tab-2-min.jpg    1x,
+                  ./image/adv/adv-bg-tab-2@2x-min.jpg 2x
+                "
+              />
+              <img src="./image/adv/adv-bg-tab-2-min.jpg" alt="nature" />
+            </picture>
+
+            <!-- pictures for desk -->
+
+            <picture class="adv-picture">
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/adv/adv-desk-1-min.jpg    1x,
+                  ./image/adv/adv-desk-1@2x-min.jpg 2x
+                "
+              />
+              <img src="./image/adv/adv-desk-1-min.jpg" alt="nature" />
+            </picture>
+
+            <picture class="adv-picture">
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/adv/adv-desk-2-min.jpg    1x,
+                  ./image/adv/adv-desk-2@2x-min.jpg 2x
+                "
+              />
+              <img src="./image/adv/adv-desk-2-min.jpg" alt="nature" />
+            </picture>
+
+            <picture class="adv-picture">
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./image/adv/adv-desk-3-min.jpg    1x,
+                  ./image/adv/adv-desk-3@2x-min.jpg 2x
+                "
+              />
+              <img src="./image/adv/adv-desk-3-min.jpg" alt="nature" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="tours">
+        <div class="container">
+          <h2 class="tours-ttl">Upcoming tours</h2>
+          <!--  -->
+          <div class="tours-radio-box">
+            <input type="radio" name="tour" id="tour-1" checked />
+            <input type="radio" name="tour" id="tour-2" />
+            <input type="radio" name="tour" id="tour-3" />
+            <input type="radio" name="tour" id="tour-4" />
+
+            <ul class="tours-lst">
+              <li class="tours-itm">
+                <picture class="tours-picture">
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/tours/tours-mb-img-1-min.jpg    1x,
+                      ./image/tours/tours-mb-img-1@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-mb-img-1-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="315"
+                    height="338"
+                  />
+                </picture>
+
+                <picture class="tours-picture">
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/tours/tours-tab-img-1-min.jpg    1x,
+                      ./image/tours/tours-tab-img-1@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-tab-img-1-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="354"
+                    height="357"
+                  />
+                </picture>
+
+                <picture class="tours-picture">
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./image/tours/tours-desk-img-1-min.jpg    1x,
+                      ./image/tours/tours-desk-img-1@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-desk-img-1-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="377"
+                    height="438"
+                  />
+                </picture>
+
+                <div class="tours-content-box">
+                  <h3 class="tours-itm-ttl">Ascent to Hoverla</h3>
+                  <p class="tours-itm-descr">From UAH 4,499/person</p>
+                  <button type="button" class="rect-btn">More details</button>
+                </div>
+              </li>
+
+              <li class="tours-itm">
+                <picture class="tours-picture">
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/tours/tours-mb-img-2-min.jpg    1x,
+                      ./image/tours/tours-mb-img-2@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-mb-img-2-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="315"
+                    height="338"
+                  />
+                </picture>
+
+                <picture class="tours-picture">
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/tours/tours-tab-img-2-min.jpg    1x,
+                      ./image/tours/tours-tab-img-2@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-tab-img-2-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="354"
+                    height="357"
+                  />
+                </picture>
+
+                <picture class="tours-picture">
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./image/tours/tours-desk-img-2-min.jpg    1x,
+                      ./image/tours/tours-desk-img-2@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-desk-img-2-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="377"
+                    height="438"
+                  />
+                </picture>
+
+                <div class="tours-content-box">
+                  <h3 class="tours-itm-ttl">Ski tour to Bukovel</h3>
+                  <p class="tours-itm-descr">From UAH 7,499/person</p>
+                  <button type="button" class="rect-btn">More details</button>
+                </div>
+              </li>
+
+              <li class="tours-itm">
+                <picture class="tours-picture">
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/tours/tours-mb-img-3-min.jpg    1x,
+                      ./image/tours/tours-mb-img-3@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-mb-img-3-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="315"
+                    height="338"
+                  />
+                </picture>
+
+                <picture class="tours-picture">
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/tours/tours-tab-img-3-min.jpg    1x,
+                      ./image/tours/tours-tab-img-3@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-tab-img-3-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="354"
+                    height="357"
+                  />
+                </picture>
+
+                <picture class="tours-picture">
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./image/tours/tours-desk-img-3-min.jpg    1x,
+                      ./image/tours/tours-desk-img-3@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-desk-img-3-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="377"
+                    height="438"
+                  />
+                </picture>
+
+                <div class="tours-content-box">
+                  <h3 class="tours-itm-ttl">Week in Carpathians</h3>
+                  <p class="tours-itm-descr">From UAH 9,999/person</p>
+                  <button type="button" class="rect-btn">More details</button>
+                </div>
+              </li>
+
+              <li class="tours-itm">
+                <picture class="tours-picture">
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/tours/tours-mb-img-1-min.jpg    1x,
+                      ./image/tours/tours-mb-img-1@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-mb-img-1-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="315"
+                    height="338"
+                  />
+                </picture>
+
+                <picture class="tours-picture">
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/tours/tours-tab-img-1-min.jpg    1x,
+                      ./image/tours/tours-tab-img-1@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-tab-img-1-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="354"
+                    height="357"
+                  />
+                </picture>
+
+                <picture class="tours-picture">
+                  <source
+                    media="(min-width:1200px)"
+                    srcset="
+                      ./image/tours/tours-desk-img-1-min.jpg    1x,
+                      ./image/tours/tours-desk-img-1@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./image/tours/tours-desk-img-1-min.jpg"
+                    alt="nature"
+                    class="tours-img"
+                    width="377"
+                    height="438"
+                  />
+                </picture>
+
+                <div class="tours-content-box">
+                  <h3 class="tours-itm-ttl">Ascent to Hoverla</h3>
+                  <p class="tours-itm-descr">From UAH 4,499/person</p>
+                  <button type="button" class="rect-btn">More details</button>
+                </div>
+              </li>
+            </ul>
+
+            <div class="tours-box-btn">
+              <label for="tour-1"></label>
+              <label for="tour-2"></label>
+              <label for="tour-3"></label>
+              <label for="tour-4"></label>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h2 class="rev-ttl">Reviews</h2>
+          <ul class="rev-lst">
+            <li class="rev-itm">
+              <picture class="rev-box-img">
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./image/reviews/rev-bg-mb-min.jpg    1x,
+                    ./image/reviews/rev-bg-mb@2x-min.jpg 2x
+                  "
+                />
+                <img
+                  src="./image/reviews/rev-bg-mb-min.jpg"
+                  alt="sunset"
+                  width="311"
+                  height="134"
+                />
+              </picture>
+
+              <div class="rev-itm-content">
+                <div class="rev-box-avatar">
+                  <img
+                    src="./image/reviews/rev-avatar-1-min.png"
+                    alt="person's face"
+                    class="rev-avatar"
+                  />
+                </div>
+                <h3 class="rev-user-name">Maria</h3>
+                <p class="rev-user-text">
+                  It was really cool! We saw everything - sun, snow, rain, fog! It's very
+                  exciting and interesting, you won't regret it - it's worth going and
+                  seeing everything with your own eyes. Everything is organized
+                  at the highest level.
+                </p>
+                <button
+                  type="button"
+                  class="turn-around"
+                  aria-label="button to flip on the back side"
+                >
+                  <svg class="icon-tr-around" width="40" height="40">
+                    <use href="./image/sprite_icons.svg#icon-turned"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="gallery hidden">
+        <div class="container">
+          <h2 class="gall-ttl">Gallery</h2>
+          <div class="gall-list-box">
+            <input type="radio" name="pic" id="pic-1" checked />
+            <input type="radio" name="pic" id="pic-2" />
+            <input type="radio" name="pic" id="pic-3" />
+            <input type="radio" name="pic" id="pic-4" />
+            <input type="radio" name="pic" id="pic-5" />
+            <input type="radio" name="pic" id="pic-6" />
+            <input type="radio" name="pic" id="pic-7" />
+            <input type="radio" name="pic" id="pic-8" />
+            <input type="radio" name="pic" id="pic-9" />
+
+            <ul class="gall-lst">
+              <li class="gall-itm">
+                <picture>
+                  <source
+                    media="(min-width:1170px)"
+                    srcset="
+                      ./image/gallery/desk/gal-desk-1-min.jpg    1x,
+                      ./image/gallery/desk/gal-desk-1@2x-min.png 2x
+                    "
+                  />
+                  <img
+                    src="./image/gallery/desk/gal-desk-1-min.jpg"
+                    alt=""
+                    class="gall-img"
+                  />
+                </picture>
+              </li>
+              <li class="gall-itm">
+                <picture>
+                  <source
+                    media="(min-width:1170px)"
+                    srcset="
+                      ./image/gallery/desk/gal-desk-2-min.jpg    1x,
+                      ./image/gallery/desk/gal-desk-2@2x-min.png 2x
+                    "
+                  />
+                  <img
+                    src="./image/gallery/desk/gal-desk-2-min.jpg"
+                    alt=""
+                    class="gall-img"
+                  />
+                </picture>
+              </li>
+              <li class="gall-itm">
+                <picture>
+                  <source
+                    media="(min-width:1170px)"
+                    srcset="
+                      ./image/gallery/desk/gal-desk-3-min.jpg    1x,
+                      ./image/gallery/desk/gal-desk-3@2x-min.png 2x
+                    "
+                  />
+                  <img
+                    src="./image/gallery/desk/gal-desk-3-min.jpg"
+                    alt=""
+                    class="gall-img"
+                  />
+                </picture>
+              </li>
+              <li class="gall-itm">
+                <picture>
+                  <source
+                    media="(min-width:1170px)"
+                    srcset="
+                      ./image/gallery/desk/gal-desk-4-min.jpg    1x,
+                      ./image/gallery/desk/gal-desk-4@2x-min.png 2x
+                    "
+                  />
+                  <img
+                    src="./image/gallery/desk/gal-desk-4-min.jpg"
+                    alt=""
+                    class="gall-img"
+                  />
+                </picture>
+              </li>
+              <li class="gall-itm">
+                <picture>
+                  <source
+                    media="(min-width:1170px)"
+                    srcset="
+                      ./image/gallery/desk/gal-desk-5-min.jpg    1x,
+                      ./image/gallery/desk/gal-desk-5@2x-min.png 2x
+                    "
+                  />
+                  <img
+                    src="./image/gallery/desk/gal-desk-5-min.jpg"
+                    alt=""
+                    class="gall-img"
+                  />
+                </picture>
+              </li>
+              <li class="gall-itm">
+                <picture>
+                  <source
+                    media="(min-width:1170px)"
+                    srcset="
+                      ./image/gallery/desk/gal-desk-6-min.jpg    1x,
+                      ./image/gallery/desk/gal-desk-6@2x-min.png 2x
+                    "
+                  />
+                  <img
+                    src="./image/gallery/desk/gal-desk-6-min.jpg"
+                    alt=""
+                    class="gall-img"
+                  />
+                </picture>
+              </li>
+              <li class="gall-itm">
+                <picture>
+                  <source
+                    media="(min-width:1170px)"
+                    srcset="
+                      ./image/gallery/desk/gal-desk-7-min.jpg    1x,
+                      ./image/gallery/desk/gal-desk-7@2x-min.png 2x
+                    "
+                  />
+                  <img
+                    src="./image/gallery/desk/gal-desk-7-min.jpg"
+                    alt=""
+                    class="gall-img"
+                  />
+                </picture>
+              </li>
+              <li class="gall-itm">
+                <picture>
+                  <source
+                    media="(min-width:1170px)"
+                    srcset="
+                      ./image/gallery/desk/gal-desk-8-min.jpg    1x,
+                      ./image/gallery/desk/gal-desk-8@2x-min.png 2x
+                    "
+                  />
+                  <img
+                    src="./image/gallery/desk/gal-desk-8-min.jpg"
+                    alt=""
+                    class="gall-img"
+                  />
+                </picture>
+              </li>
+              <li class="gall-itm">
+                <picture>
+                  <source
+                    media="(min-width:1170px)"
+                    srcset="
+                      ./image/gallery/desk/gal-desk-9-min.jpg    1x,
+                      ./image/gallery/desk/gal-desk-9@2x-min.png 2x
+                    "
+                  />
+                  <img
+                    src="./image/gallery/desk/gal-desk-9-min.jpg"
+                    alt=""
+                    class="gall-img"
+                  />
+                </picture>
+              </li>
+            </ul>
+
+            <div class="gall-box-btn">
+              <label for="pic-1"></label>
+              <label for="pic-2"></label>
+              <label for="pic-3"></label>
+              <label for="pic-4"></label>
+              <label for="pic-5"></label>
+              <label for="pic-6"></label>
+              <label for="pic-7"></label>
+              <label for="pic-8"></label>
+              <label for="pic-9"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="questions hidden">
+        <div class="container">
+          <div class="qst-window">
+            <h2 class="qst-ttl">Do you have any questions?</h2>
+            <p class="qst-descr">
+              You can leave your questions here and our manager will call you back within
+              10 minutes
+            </p>
+            <!--  -->
+            <form class="qst-form">
+              <input
+                class="qst-input"
+                type="text"
+                name="username"
+                placeholder="Your name*"
+                required
+              />
+              <input
+                class="qst-input"
+                type="text"
+                name="phonenumber"
+                placeholder="Phone number*"
+                required
+              />
+              <input
+                class="qst-input"
+                type="text"
+                name="question"
+                placeholder="What would you like to know?"
+                required
+              />
+              <a href="tel:0000000000" class="rect-btn">Call me</a>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer hidden">
+      <div class="container footer-container">
+        <div class="footer-wrapper">
+          <h2 class="ft-ttl">Contacts</h2>
+
+          <div class="ft-contacts">
+            <address class="ft-address">
+              <ul class="ft-adr-lst">
+                <li class="ft-adr-itm">
+                  <a href="#" class="ft-adr-link">
+                    <svg class="icon-location" width="40" height="40">
+                      <use href="./image/sprite_icons.svg#icon-location"></use>
+                    </svg>
+                    Lviv, st. Doroshenko, 44 k
+                  </a>
+                </li>
+                <li class="ft-adr-itm">
+                  <a href="tel:+380971626790" class="ft-adr-link">
+                    <svg class="icon-phone" width="40" height="40">
+                      <use href="./image/sprite_icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 (097) 162 -67-90
+                  </a>
+                </li>
+                <li class="ft-adr-itm">
+                  <a href="mailto:mandrykarpaty@gmail.com" class="ft-adr-link">
+                    <svg class="icon-email" width="40" height="40">
+                      <use href="./image/sprite_icons.svg#icon-email"></use>
+                    </svg>
+                    mandrykarpaty@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+
+            <ul class="social-lst">
+              <li class="socia-itm">
+                <a href="#" class="social-link" aria-label="link to telegram">
+                  <svg class="social-icon" width="40" height="40">
+                    <use href="./image/sprite_icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socia-itm">
+                <a href="#" class="social-link" aria-label="link to instadram">
+                  <svg class="social-icon" width="40" height="40">
+                    <use href="./image/sprite_icons.svg#icon-instadram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socia-itm">
+                <a href="#" class="social-link" aria-label="link to facebook">
+                  <svg class="social-icon" width="40" height="40">
+                    <use href="./image/sprite_icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <small class="copiraght">
+          <svg class="icon-copyright" width="16" height="16">
+            <use href="./image/sprite_icons.svg#icon-copyright"></use>
+          </svg>
+          Created by LelekaSoft
+        </small>
+      </div>
+    </footer>
+  </body>
+</html>
