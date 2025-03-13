@@ -654,7 +654,7 @@
       </section>
 
       <section class="gallery">
-        <div class="container">
+        <div class="container gall-container">
           <h2 class="gall-ttl">Gallery</h2>
           <div class="gall-list-box">
             <input type="radio" name="pic" id="pic-1" checked />
@@ -665,149 +665,284 @@
             <input type="radio" name="pic" id="pic-6" />
             <input type="radio" name="pic" id="pic-7" />
             <input type="radio" name="pic" id="pic-8" />
-            <input type="radio" name="pic" id="pic-9" />
 
             <ul class="gall-lst">
               <li class="gall-itm">
                 <picture>
                   <source
-                    media="(min-width:1170px)"
+                    media="(min-width:1200px)"
                     srcset="
-                      ./image/gallery/desk/gal-desk-1-min.jpg    1x,
-                      ./image/gallery/desk/gal-desk-1@2x-min.png 2x
+                      ./image/gallery/desk/gall-desk-1-min.jpg    1x,
+                      ./image/gallery/desk/gall-desk-1@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/gallery/tab/gall-tab-1-min.jpg    1x,
+                      ./image/gallery/tab/gall-tab-1@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/gallery/mob/gall-mob-1-min.jpg    1x,
+                      ./image/gallery/mob/gall-mob-1@2x-min.jpg 2x
                     "
                   />
                   <img
-                    src="./image/gallery/desk/gal-desk-1-min.jpg"
-                    alt=""
+                    src="./image/gallery/mob/gall-mob-1-min.jpg"
+                    alt="nature"
                     class="gall-img"
                   />
                 </picture>
               </li>
+
               <li class="gall-itm">
                 <picture>
                   <source
-                    media="(min-width:1170px)"
+                    media="(min-width:1200px)"
                     srcset="
-                      ./image/gallery/desk/gal-desk-2-min.jpg    1x,
-                      ./image/gallery/desk/gal-desk-2@2x-min.png 2x
+                      ./image/gallery/desk/gall-desk-2-min.jpg    1x,
+                      ./image/gallery/desk/gall-desk-2@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/gallery/tab/gall-tab-2-min.jpg    1x,
+                      ./image/gallery/tab/gall-tab-2@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/gallery/mob/gall-mob-2-min.jpg    1x,
+                      ./image/gallery/mob/gall-mob-2@2x-min.jpg 2x
                     "
                   />
                   <img
-                    src="./image/gallery/desk/gal-desk-2-min.jpg"
-                    alt=""
+                    src="./image/gallery/mob/gall-mob-2-min.jpg"
+                    alt="nature"
                     class="gall-img"
                   />
                 </picture>
               </li>
+
               <li class="gall-itm">
                 <picture>
                   <source
-                    media="(min-width:1170px)"
+                    media="(min-width:1200px)"
                     srcset="
-                      ./image/gallery/desk/gal-desk-3-min.jpg    1x,
-                      ./image/gallery/desk/gal-desk-3@2x-min.png 2x
+                      ./image/gallery/desk/gall-desk-3-min.jpg    1x,
+                      ./image/gallery/desk/gall-desk-3@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/gallery/tab/gall-tab-3-min.jpg    1x,
+                      ./image/gallery/tab/gall-tab-3@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/gallery/mob/gall-mob-3-min.jpg    1x,
+                      ./image/gallery/mob/gall-mob-3@2x-min.jpg 2x
                     "
                   />
                   <img
-                    src="./image/gallery/desk/gal-desk-3-min.jpg"
-                    alt=""
+                    src="./image/gallery/mob/gall-mob-3-min.jpg"
+                    alt="nature"
                     class="gall-img"
                   />
                 </picture>
               </li>
+
               <li class="gall-itm">
                 <picture>
                   <source
-                    media="(min-width:1170px)"
+                    media="(min-width:1200px)"
                     srcset="
-                      ./image/gallery/desk/gal-desk-4-min.jpg    1x,
-                      ./image/gallery/desk/gal-desk-4@2x-min.png 2x
+                      ./image/gallery/desk/gall-desk-4-min.jpg    1x,
+                      ./image/gallery/desk/gall-desk-4@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/gallery/tab/gall-tab-4-min.jpg    1x,
+                      ./image/gallery/tab/gall-tab-4@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/gallery/mob/gall-mob-4-min.jpg    1x,
+                      ./image/gallery/mob/gall-mob-4@2x-min.jpg 2x
                     "
                   />
                   <img
-                    src="./image/gallery/desk/gal-desk-4-min.jpg"
-                    alt=""
+                    src="./image/gallery/mob/gall-mob-4-min.jpg"
+                    alt="nature"
                     class="gall-img"
                   />
                 </picture>
               </li>
+
               <li class="gall-itm">
                 <picture>
                   <source
-                    media="(min-width:1170px)"
+                    media="(min-width:1200px)"
                     srcset="
-                      ./image/gallery/desk/gal-desk-5-min.jpg    1x,
-                      ./image/gallery/desk/gal-desk-5@2x-min.png 2x
+                      ./image/gallery/desk/gall-desk-5-min.jpg    1x,
+                      ./image/gallery/desk/gall-desk-5@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/gallery/tab/gall-tab-5-min.jpg    1x,
+                      ./image/gallery/tab/gall-tab-5@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/gallery/mob/gall-mob-5-min.jpg    1x,
+                      ./image/gallery/mob/gall-mob-5@2x-min.jpg 2x
                     "
                   />
                   <img
-                    src="./image/gallery/desk/gal-desk-5-min.jpg"
-                    alt=""
+                    src="./image/gallery/mob/gall-mob-5-min.jpg"
+                    alt="nature"
                     class="gall-img"
                   />
                 </picture>
               </li>
+
               <li class="gall-itm">
                 <picture>
                   <source
-                    media="(min-width:1170px)"
+                    media="(min-width:1200px)"
                     srcset="
-                      ./image/gallery/desk/gal-desk-6-min.jpg    1x,
-                      ./image/gallery/desk/gal-desk-6@2x-min.png 2x
+                      ./image/gallery/desk/gall-desk-6-min.jpg    1x,
+                      ./image/gallery/desk/gall-desk-6@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/gallery/tab/gall-tab-6-min.jpg    1x,
+                      ./image/gallery/tab/gall-tab-6@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/gallery/mob/gall-mob-6-min.jpg    1x,
+                      ./image/gallery/mob/gall-mob-6@2x-min.jpg 2x
                     "
                   />
                   <img
-                    src="./image/gallery/desk/gal-desk-6-min.jpg"
-                    alt=""
+                    src="./image/gallery/mob/gall-mob-6-min.jpg"
+                    alt="nature"
                     class="gall-img"
                   />
                 </picture>
               </li>
+
               <li class="gall-itm">
                 <picture>
                   <source
-                    media="(min-width:1170px)"
+                    media="(min-width:1200px)"
                     srcset="
-                      ./image/gallery/desk/gal-desk-7-min.jpg    1x,
-                      ./image/gallery/desk/gal-desk-7@2x-min.png 2x
+                      ./image/gallery/desk/gall-desk-7-min.jpg    1x,
+                      ./image/gallery/desk/gall-desk-7@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/gallery/tab/gall-tab-7-min.jpg    1x,
+                      ./image/gallery/tab/gall-tab-7@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/gallery/mob/gall-mob-7-min.jpg    1x,
+                      ./image/gallery/mob/gall-mob-7@2x-min.jpg 2x
                     "
                   />
                   <img
-                    src="./image/gallery/desk/gal-desk-7-min.jpg"
-                    alt=""
+                    src="./image/gallery/mob/gall-mob-7-min.jpg"
+                    alt="nature"
                     class="gall-img"
                   />
                 </picture>
               </li>
+
               <li class="gall-itm">
                 <picture>
                   <source
-                    media="(min-width:1170px)"
+                    media="(min-width:1200px)"
                     srcset="
-                      ./image/gallery/desk/gal-desk-8-min.jpg    1x,
-                      ./image/gallery/desk/gal-desk-8@2x-min.png 2x
+                      ./image/gallery/desk/gall-desk-8-min.jpg    1x,
+                      ./image/gallery/desk/gall-desk-8@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/gallery/tab/gall-tab-8-min.jpg    1x,
+                      ./image/gallery/tab/gall-tab-8@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/gallery/mob/gall-mob-8-min.jpg    1x,
+                      ./image/gallery/mob/gall-mob-8@2x-min.jpg 2x
                     "
                   />
                   <img
-                    src="./image/gallery/desk/gal-desk-8-min.jpg"
-                    alt=""
+                    src="./image/gallery/mob/gall-mob-8-min.jpg"
+                    alt="nature"
                     class="gall-img"
                   />
                 </picture>
               </li>
+
+              <!--  -->
+
               <li class="gall-itm">
                 <picture>
                   <source
-                    media="(min-width:1170px)"
+                    media="(min-width:1200px)"
                     srcset="
-                      ./image/gallery/desk/gal-desk-9-min.jpg    1x,
-                      ./image/gallery/desk/gal-desk-9@2x-min.png 2x
+                      ./image/gallery/desk/gall-desk-1-min.jpg    1x,
+                      ./image/gallery/desk/gall-desk-1@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./image/gallery/tab/gall-tab-1-min.jpg    1x,
+                      ./image/gallery/tab/gall-tab-1@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:767px)"
+                    srcset="
+                      ./image/gallery/mob/gall-mob-1-min.jpg    1x,
+                      ./image/gallery/mob/gall-mob-1@2x-min.jpg 2x
                     "
                   />
                   <img
-                    src="./image/gallery/desk/gal-desk-9-min.jpg"
-                    alt=""
+                    src="./image/gallery/mob/gall-mob-1-min.jpg"
+                    alt="nature"
                     class="gall-img"
                   />
                 </picture>
@@ -823,13 +958,12 @@
               <label for="pic-6"></label>
               <label for="pic-7"></label>
               <label for="pic-8"></label>
-              <label for="pic-9"></label>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="questions hidden">
+      <section class="questions">
         <div class="container">
           <div class="qst-window">
             <h2 class="qst-ttl">Do you have any questions?</h2>

@@ -280,7 +280,7 @@ body {
 }
 .about {
   padding-top: 52px;
-  padding-bottom: 52px;
+  padding-bottom: 26px;
 }
 
 .about-ttl {
@@ -298,7 +298,7 @@ body {
 @media screen and (min-width: 768px) {
   .about {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
   .about-ttl {
     font-size: 52px;
@@ -323,7 +323,7 @@ body {
   }
 }
 .adv {
-  padding-bottom: 52px;
+  padding: 26px 0;
 }
 
 .adv-ttl {
@@ -382,7 +382,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .adv {
-    padding-bottom: 80px;
+    padding: 40px 0;
   }
   .adv-ttl {
     font-size: 52px;
@@ -466,6 +466,10 @@ body {
     bottom: 0;
   }
 }
+.tours {
+  padding: 26px 0;
+}
+
 .tours-ttl {
   font-weight: 400;
   font-size: 32px;
@@ -588,6 +592,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .tours {
+    padding: 40px 0;
+  }
   .tours-ttl {
     font-size: 52px;
     margin-bottom: 40px;
@@ -669,7 +676,7 @@ body {
   }
 }
 .reviews {
-  padding-top: 52px;
+  padding: 26px 0;
 }
 
 .rev-ttl {
@@ -745,7 +752,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding-top: 80px;
+    padding: 40px 0;
   }
   .rev-ttl {
     font-size: 52px;
@@ -791,5 +798,272 @@ body {
   }
   .rev-user-name {
     font-size: 28px;
+  }
+}
+.gallery {
+  padding: 26px 0;
+}
+
+.container.gall-container {
+  max-width: 375px;
+  padding: 0;
+}
+
+.gall-ttl {
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 28px;
+}
+
+.gall-list-box {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.gall-list-box input {
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+
+.gall-lst {
+  display: flex;
+  gap: 20px;
+  width: 800%;
+  margin-bottom: 24px;
+}
+
+#pic-1:checked ~ .gall-lst {
+  margin-left: 32px;
+}
+
+#pic-2:checked ~ .gall-lst {
+  margin-left: -253px;
+}
+
+#pic-3:checked ~ .gall-lst {
+  margin-left: -553px;
+}
+
+#pic-4:checked ~ .gall-lst {
+  margin-left: -853px;
+}
+
+#pic-5:checked ~ .gall-lst {
+  margin-left: -1153px;
+}
+
+#pic-6:checked ~ .gall-lst {
+  margin-left: -1453px;
+}
+
+#pic-7:checked ~ .gall-lst {
+  margin-left: -1753px;
+}
+
+#pic-8:checked ~ .gall-lst {
+  margin-left: -2053px;
+}
+
+.gall-box-btn {
+  position: relative;
+  width: 96px;
+  height: 28px;
+  margin: 0 auto;
+}
+
+.left-arrow.icon-arrow {
+  transform: scaleX(-1);
+}
+
+#pic-1:checked ~ .gall-box-btn label:nth-child(8),
+#pic-2:checked ~ .gall-box-btn label:nth-child(1),
+#pic-3:checked ~ .gall-box-btn label:nth-child(2),
+#pic-4:checked ~ .gall-box-btn label:nth-child(3),
+#pic-5:checked ~ .gall-box-btn label:nth-child(4),
+#pic-6:checked ~ .gall-box-btn label:nth-child(5),
+#pic-7:checked ~ .gall-box-btn label:nth-child(6),
+#pic-8:checked ~ .gall-box-btn label:nth-child(7) {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 0;
+  background-image: url(../image/arrow-left.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+#pic-1:checked ~ .gall-box-btn label:nth-child(8):hover,
+#pic-2:checked ~ .gall-box-btn label:nth-child(1):hover,
+#pic-3:checked ~ .gall-box-btn label:nth-child(2):hover,
+#pic-4:checked ~ .gall-box-btn label:nth-child(3):hover,
+#pic-5:checked ~ .gall-box-btn label:nth-child(4):hover,
+#pic-6:checked ~ .gall-box-btn label:nth-child(5):hover,
+#pic-7:checked ~ .gall-box-btn label:nth-child(6):hover,
+#pic-8:checked ~ .gall-box-btn label:nth-child(7):hover {
+  background-image: url(../image/arrow-left-1.png);
+}
+
+#pic-1:checked ~ .gall-box-btn label:nth-child(2),
+#pic-2:checked ~ .gall-box-btn label:nth-child(3),
+#pic-3:checked ~ .gall-box-btn label:nth-child(4),
+#pic-4:checked ~ .gall-box-btn label:nth-child(5),
+#pic-5:checked ~ .gall-box-btn label:nth-child(6),
+#pic-6:checked ~ .gall-box-btn label:nth-child(7),
+#pic-7:checked ~ .gall-box-btn label:nth-child(8),
+#pic-8:checked ~ .gall-box-btn label:nth-child(1) {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  right: 0;
+  background-image: url(../image/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+#pic-1:checked ~ .gall-box-btn label:nth-child(2):hover,
+#pic-2:checked ~ .gall-box-btn label:nth-child(3):hover,
+#pic-3:checked ~ .gall-box-btn label:nth-child(4):hover,
+#pic-4:checked ~ .gall-box-btn label:nth-child(5):hover,
+#pic-5:checked ~ .gall-box-btn label:nth-child(6):hover,
+#pic-6:checked ~ .gall-box-btn label:nth-child(7):hover,
+#pic-7:checked ~ .gall-box-btn label:nth-child(8):hover,
+#pic-8:checked ~ .gall-box-btn label:nth-child(1):hover {
+  background-image: url(../image/arrow-right-1.png);
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .container.gall-container {
+    max-width: 768px;
+    padding: 0 20px;
+  }
+  .gall-ttl {
+    margin-bottom: 40px;
+  }
+  .gall-lst {
+    margin-bottom: 32px;
+  }
+  #pic-1:checked ~ .gall-lst {
+    margin-left: 0;
+  }
+  #pic-2:checked ~ .gall-lst {
+    margin-left: -374px;
+  }
+  #pic-3:checked ~ .gall-lst {
+    margin-left: -748px;
+  }
+  #pic-4:checked ~ .gall-lst {
+    margin-left: -1122px;
+  }
+  #pic-5:checked ~ .gall-lst {
+    margin-left: -1496px;
+  }
+  #pic-6:checked ~ .gall-lst {
+    margin-left: -1870px;
+  }
+  #pic-7:checked ~ .gall-lst {
+    margin-left: -2244px;
+  }
+  #pic-8:checked ~ .gall-lst {
+    margin-left: -2618px;
+  }
+}
+.gall-box-btn {
+  width: 104px;
+  height: 32px;
+}
+
+#pic-1:checked ~ .gall-box-btn label:nth-child(8),
+#pic-2:checked ~ .gall-box-btn label:nth-child(1),
+#pic-3:checked ~ .gall-box-btn label:nth-child(2),
+#pic-4:checked ~ .gall-box-btn label:nth-child(3),
+#pic-5:checked ~ .gall-box-btn label:nth-child(4),
+#pic-6:checked ~ .gall-box-btn label:nth-child(5),
+#pic-7:checked ~ .gall-box-btn label:nth-child(6),
+#pic-8:checked ~ .gall-box-btn label:nth-child(7) {
+  width: 32px;
+  height: 32px;
+}
+
+#pic-1:checked ~ .gall-box-btn label:nth-child(2),
+#pic-2:checked ~ .gall-box-btn label:nth-child(3),
+#pic-3:checked ~ .gall-box-btn label:nth-child(4),
+#pic-4:checked ~ .gall-box-btn label:nth-child(5),
+#pic-5:checked ~ .gall-box-btn label:nth-child(6),
+#pic-6:checked ~ .gall-box-btn label:nth-child(7),
+#pic-7:checked ~ .gall-box-btn label:nth-child(8),
+#pic-8:checked ~ .gall-box-btn label:nth-child(1) {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container.gall-container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
+  .gall-ttl {
+    font-size: 68px;
+    margin-bottom: 59px;
+  }
+  .gall-lst {
+    margin-bottom: 40px;
+  }
+  #pic-1:checked ~ .gall-lst {
+    margin-left: 0;
+  }
+  #pic-2:checked ~ .gall-lst {
+    margin-left: -595px;
+  }
+  #pic-3:checked ~ .gall-lst {
+    margin-left: -1190px;
+  }
+  #pic-4:checked ~ .gall-lst {
+    margin-left: -1785px;
+  }
+  #pic-5:checked ~ .gall-lst {
+    margin-left: -2380px;
+  }
+  #pic-6:checked ~ .gall-lst {
+    margin-left: -2975px;
+  }
+  #pic-7:checked ~ .gall-lst {
+    margin-left: -3570px;
+  }
+  #pic-8:checked ~ .gall-lst {
+    margin-left: -4165px;
+  }
+  .gall-box-btn {
+    width: 140px;
+    height: 40px;
+  }
+  #pic-1:checked ~ .gall-box-btn label:nth-child(8),
+  #pic-2:checked ~ .gall-box-btn label:nth-child(1),
+  #pic-3:checked ~ .gall-box-btn label:nth-child(2),
+  #pic-4:checked ~ .gall-box-btn label:nth-child(3),
+  #pic-5:checked ~ .gall-box-btn label:nth-child(4),
+  #pic-6:checked ~ .gall-box-btn label:nth-child(5),
+  #pic-7:checked ~ .gall-box-btn label:nth-child(6),
+  #pic-8:checked ~ .gall-box-btn label:nth-child(7) {
+    width: 40px;
+    height: 40px;
+  }
+  #pic-1:checked ~ .gall-box-btn label:nth-child(2),
+  #pic-2:checked ~ .gall-box-btn label:nth-child(3),
+  #pic-3:checked ~ .gall-box-btn label:nth-child(4),
+  #pic-4:checked ~ .gall-box-btn label:nth-child(5),
+  #pic-5:checked ~ .gall-box-btn label:nth-child(6),
+  #pic-6:checked ~ .gall-box-btn label:nth-child(7),
+  #pic-7:checked ~ .gall-box-btn label:nth-child(8),
+  #pic-8:checked ~ .gall-box-btn label:nth-child(1) {
+    width: 40px;
+    height: 40px;
   }
 }
