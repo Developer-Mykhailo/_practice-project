@@ -493,18 +493,27 @@
             <li class="rev-itm">
               <picture class="rev-box-img">
                 <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./image/reviews/rev-bg-desk-min.jpg    1x,
+                    ./image/reviews/rev-bg-desk@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./image/reviews/rev-bg-tab-min.jpg    1x,
+                    ./image/reviews/rev-bg-tab@2x-min.jpg 2x
+                  "
+                />
+                <source
                   media="(max-width:767px)"
                   srcset="
                     ./image/reviews/rev-bg-mb-min.jpg    1x,
                     ./image/reviews/rev-bg-mb@2x-min.jpg 2x
                   "
                 />
-                <img
-                  src="./image/reviews/rev-bg-mb-min.jpg"
-                  alt="sunset"
-                  width="311"
-                  height="134"
-                />
+                <img src="./image/reviews/rev-bg-mb-min.jpg " alt="sunset" />
               </picture>
 
               <div class="rev-itm-content">
@@ -519,25 +528,132 @@
                 <p class="rev-user-text">
                   It was really cool! We saw everything - sun, snow, rain, fog! It's very
                   exciting and interesting, you won't regret it - it's worth going and
-                  seeing everything with your own eyes. Everything is organized
-                  at the highest level.
+                  seeing everything with your own eyes. Everything is organized at the
+                  highest level.
                 </p>
-                <button
-                  type="button"
-                  class="turn-around"
-                  aria-label="button to flip on the back side"
-                >
-                  <svg class="icon-tr-around" width="40" height="40">
-                    <use href="./image/sprite_icons.svg#icon-turned"></use>
-                  </svg>
-                </button>
               </div>
+
+              <button
+                type="button"
+                class="turn-around"
+                aria-label="button to flip on the back side"
+              >
+                <svg class="icon-tr-around" width="40" height="40">
+                  <use href="./image/sprite_icons.svg#icon-turned"></use>
+                </svg>
+              </button>
+            </li>
+
+            <li class="rev-itm">
+              <picture class="rev-box-img">
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./image/reviews/rev-bg-desk-min.jpg    1x,
+                    ./image/reviews/rev-bg-desk@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./image/reviews/rev-bg-tab-min.jpg    1x,
+                    ./image/reviews/rev-bg-tab@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./image/reviews/rev-bg-mb-min.jpg    1x,
+                    ./image/reviews/rev-bg-mb@2x-min.jpg 2x
+                  "
+                />
+                <img src="./image/reviews/rev-bg-mb-min.jpg " alt="sunset" />
+              </picture>
+
+              <div class="rev-itm-content">
+                <div class="rev-box-avatar">
+                  <img
+                    src="./image/reviews/rev-avatar-2-min.png"
+                    alt="person's face"
+                    class="rev-avatar"
+                  />
+                </div>
+                <h3 class="rev-user-name">Ostap</h3>
+                <p class="rev-user-text">
+                  Good organization, everything went smoothly. Friendly guide Taras told
+                  interesting facts about the area and customs throughout the tour.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="turn-around"
+                aria-label="button to flip on the back side"
+              >
+                <svg class="icon-tr-around" width="40" height="40">
+                  <use href="./image/sprite_icons.svg#icon-turned"></use>
+                </svg>
+              </button>
+            </li>
+
+            <li class="rev-itm">
+              <picture class="rev-box-img">
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./image/reviews/rev-bg-desk-min.jpg    1x,
+                    ./image/reviews/rev-bg-desk@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./image/reviews/rev-bg-tab-min.jpg    1x,
+                    ./image/reviews/rev-bg-tab@2x-min.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./image/reviews/rev-bg-mb-min.jpg    1x,
+                    ./image/reviews/rev-bg-mb@2x-min.jpg 2x
+                  "
+                />
+                <img src="./image/reviews/rev-bg-mb-min.jpg " alt="sunset" />
+              </picture>
+
+              <div class="rev-itm-content">
+                <div class="rev-box-avatar">
+                  <img
+                    src="./image/reviews/rev-avatar-3-min.png"
+                    alt="person's face"
+                    class="rev-avatar"
+                  />
+                </div>
+                <h3 class="rev-user-name">Anita</h3>
+                <p class="rev-user-text">
+                  Who is going to the mountains for the first time - this is exactly the
+                  tour and the people who organize everything. Guide Makar is interesting
+                  stories, selection of a route for a comfortable ascent, motivation and
+                  support.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="turn-around"
+                aria-label="button to flip on the back side"
+              >
+                <svg class="icon-tr-around" width="40" height="40">
+                  <use href="./image/sprite_icons.svg#icon-turned"></use>
+                </svg>
+              </button>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="gallery hidden">
+      <section class="gallery">
         <div class="container">
           <h2 class="gall-ttl">Gallery</h2>
           <div class="gall-list-box">
