@@ -28,6 +28,69 @@
   </head>
 
   <body>
+    <!-- mob-menu -->
+
+    <div class="mob-overlay">
+      <div class="mob-menu">
+        <ul class="mob-lst">
+          <li class="mob-item">
+            <a
+              href="#about"
+              class="mob-link current"
+              aria-label="link to the page About us"
+              >About us</a
+            >
+          </li>
+          <li class="mob-item">
+            <a href="#tours" class="mob-link" aria-label="link to the page Tours"
+              >Tours</a
+            >
+          </li>
+          <li class="mob-item">
+            <a href="#reviews" class="mob-link" aria-label="link to the page Reviews"
+              >Reviews</a
+            >
+          </li>
+          <li class="mob-item">
+            <a href="#gallery" class="mob-link" aria-label="link to the page Gallery"
+              >Gallery</a
+            >
+          </li>
+          <li class="mob-item">
+            <a href="#contacts" class="mob-link" aria-label="link to the page Contacts"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+
+        <ul class="social-lst">
+          <li class="social-itm">
+            <a href="#" class="social-link" aria-label="link to telegram">
+              <svg class="social-icon" width="40" height="40">
+                <use href="./image/sprite_icons.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-itm">
+            <a href="#" class="social-link" aria-label="link to instadram">
+              <svg class="social-icon" width="40" height="40">
+                <use href="./image/sprite_icons.svg#icon-instadram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-itm">
+            <a href="#" class="social-link" aria-label="link to facebook">
+              <svg class="social-icon" width="40" height="40">
+                <use href="./image/sprite_icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- END mob-menu -->
+
     <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
@@ -70,7 +133,11 @@
               >
             </li>
           </ul>
-          <button class="hero-burger" type="button" aria-label="button to open menu">
+          <button
+            class="hero-burger is-open"
+            type="button"
+            aria-label="button to open menu"
+          >
             <svg class="icon-burger" width="40" height="40">
               <use href="./image/sprite_icons.svg#icon-burger"></use>
             </svg>
@@ -118,7 +185,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <h2 class="about-ttl">About us</h2>
           <p class="about-descr">
@@ -149,6 +216,8 @@
           </ul>
 
           <div class="adv-box-picture">
+            <!-- pictures for mobile -->
+
             <picture class="adv-picture">
               <source
                 media="(max-width: 768px)"
@@ -227,7 +296,7 @@
         </div>
       </section>
 
-      <section class="tours">
+      <section class="tours" id="tours">
         <div class="container">
           <h2 class="tours-ttl">Upcoming tours</h2>
           <!--  -->
@@ -486,7 +555,7 @@
         </div>
       </section>
 
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <h2 class="rev-ttl">Reviews</h2>
           <ul class="rev-lst">
@@ -653,7 +722,7 @@
         </div>
       </section>
 
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="container gall-container">
           <h2 class="gall-ttl">Gallery</h2>
           <div class="gall-list-box">
@@ -1001,7 +1070,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container footer-container">
         <div class="footer-wrapper">
           <h2 class="ft-ttl">Contacts</h2>
