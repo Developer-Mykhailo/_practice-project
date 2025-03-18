@@ -30,7 +30,7 @@
   <body>
     <!-- mob-menu -->
 
-    <div class="mob-overlay">
+    <div class="mob-overlay hidden">
       <div class="mob-menu">
         <ul class="mob-lst">
           <li class="mob-item">
@@ -1063,7 +1063,7 @@
                 placeholder="What would you like to know?"
                 required
               />
-              <a href="tel:0000000000" class="rect-btn">Call me</a>
+              <button class="rect-btn" type="button">Call me</button>
             </form>
           </div>
         </div>
@@ -1139,5 +1139,92 @@
         </small>
       </div>
     </footer>
+
+    <!-- book tour window -->
+
+    <div class="book-overlay is-open">
+      <div class="book-tour-window">
+        <button type="button" class="close-book-tr-window">
+          <svg class="icon-close" width="30" height="30">
+            <use href="./image/sprite_icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="book-tour-ttl">Book a tour</h2>
+        <p class="book-tour-descr">
+          You can leave your application here and our manager will call you within 10
+          minutes
+        </p>
+
+        <form class="book-tour-form">
+          <input
+            type="text"
+            name="username"
+            class="bk-tour-imput"
+            placeholder="Your name*"
+            required
+          />
+          <input
+            type="text"
+            name="userphone"
+            class="bk-tour-imput"
+            placeholder="Phone number*"
+            required
+          />
+
+          <!-- type of booking -->
+
+          <input
+            id="check-tour-1"
+            type="checkbox"
+            class="checkbox-book-input visually-hidden"
+            name="type-booking-hoverla"
+            value="Ascent to Hoverla"
+            checked
+          />
+          <label for="check-tour-1">
+            <span>
+              <svg class="icon-checkmark" width="20" height="20">
+                <use href="./image/sprite_icons.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+            Ascent to Hoverla
+          </label>
+
+          <input
+            id="check-tour-2"
+            type="checkbox"
+            class="checkbox-book-input visually-hidden"
+            name="type-booking-bokovel"
+            value="Ski tour to Bukovel"
+          />
+          <label for="check-tour-2"
+            ><span>
+              <svg class="icon-checkmark" width="20" height="20">
+                <use href="./image/sprite_icons.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+            Ski tour to Bukovel
+          </label>
+
+          <input
+            id="check-tour-3"
+            type="checkbox"
+            class="checkbox-book-input visually-hidden"
+            name="type-booking-carpathians"
+            value="Week in Carpathians"
+          />
+          <label for="check-tour-3"
+            ><span>
+              <svg class="icon-checkmark" width="20" height="20">
+                <use href="./image/sprite_icons.svg#icon-checkmark"></use>
+              </svg>
+            </span>
+            Week in Carpathians
+          </label>
+
+          <button class="rect-btn" type="submit">Call me</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

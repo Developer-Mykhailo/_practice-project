@@ -1410,3 +1410,148 @@ body {
     font-size: 24px;
   }
 }
+/* #region MOBILE*/
+.book-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 35, 33, 0.5);
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+.book-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.book-tour-window {
+  width: 375px;
+  background-color: var(--white);
+  padding: 52px 32px 36px 32px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.book-tour-window .close-book-tr-window {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 250ms ease-in-out;
+}
+.book-tour-window .close-book-tr-window .icon-close {
+  fill: var(--dark);
+}
+
+.book-tour-ttl {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.book-tour-descr {
+  max-width: 281px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+
+.book-tour-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.bk-tour-imput {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 28px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #a3a5a3;
+  padding-left: 4px;
+}
+
+.bk-tour-imput::placeholder {
+  color: var(--dark);
+}
+
+.checkbox-book-input + label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.checkbox-book-input + label span {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  border: 1px solid var(--dark);
+}
+.checkbox-book-input + label + .rect-btn {
+  width: 311px;
+}
+
+.icon-checkmark {
+  opacity: 0;
+}
+
+.checkbox-book-input:checked + label .icon-checkmark {
+  opacity: 1;
+}
+
+/* #endregion MOBILE*/
+/* #region TABLET*/
+@media screen and (min-width: 768px) {
+  .book-tour-window {
+    width: 478px;
+    padding: 60px 42px 40px 42px;
+  }
+  .book-tour-ttl {
+    font-size: 32px;
+    text-align: center;
+    color: var(--black);
+    margin-bottom: 24px;
+  }
+  .book-tour-descr {
+    max-width: 325px;
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  .bk-tour-imput {
+    width: 354px;
+    height: 32px;
+    padding-left: 4px;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .bk-tour-imput::placeholder {
+    color: var(--dark);
+  }
+  .checkbox-book-input + label span {
+    margin-right: 12px;
+  }
+  #check-tour-3 + label {
+    margin-bottom: 32px;
+  }
+  #check-tour-3 + label + .rect-btn {
+    width: 394px;
+    height: 56px;
+  }
+}
+/* #endregion TABLET*/
