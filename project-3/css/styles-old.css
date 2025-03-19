@@ -62,7 +62,11 @@ body {
   --dark: #202321;
 }
 
-.gall-ttl, .rev-ttl, .tours-ttl, .adv-ttl, .about-ttl {
+.gall-ttl,
+.rev-ttl,
+.tours-ttl,
+.adv-ttl,
+.about-ttl {
   font-weight: 400;
   font-size: 68px;
   text-align: center;
