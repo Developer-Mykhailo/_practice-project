@@ -28,10 +28,71 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a
+            href="./index.html"
+            class="logo header-logo"
+            aria-label="website's logo; link to main page"
+          >
+            <svg class="icon-logo" width="60" height="60">
+              <use href="./image/sprite_icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <ul class="header-lst">
+            <li class="header-item">
+              <a
+                href="#"
+                class="header-link current"
+                aria-label="link to the page About us"
+                >About us</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link" aria-label="link to the page Tours"
+                >Tours</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link" aria-label="link to the page Reviews"
+                >Reviews</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link" aria-label="link to the page Gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="header-item">
+              <a href="#" class="header-link" aria-label="link to the page Contacts"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+          <button class="hero-burger" type="button" aria-label="button to open menu">
+            <svg class="icon-burger" width="40" height="40">
+              <use href="./image/sprite_icons.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
     <!-- mob-menu -->
 
-    <div class="mob-overlay hidden">
+    <div class="mob-overlay">
       <div class="mob-menu">
+        <a
+          href="./index.html"
+          class="logo header-logo"
+          aria-label="website's logo; link to main page"
+        >
+          <svg class="icon-logo" width="60" height="60">
+            <use href="./image/sprite_icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+
         <ul class="mob-lst">
           <li class="mob-item">
             <a
@@ -87,64 +148,15 @@
           </li>
         </ul>
       </div>
+
+      <button class="hero-burger-close" type="button" aria-label="button to close menu">
+        <svg class="burger-icon-close" width="40" height="40">
+          <use href="./image/sprite_icons.svg#icon-close"></use>
+        </svg>
+      </button>
     </div>
 
     <!-- END mob-menu -->
-
-    <header class="header">
-      <div class="container header-container">
-        <nav class="header-nav">
-          <a
-            href="./index.html"
-            class="logo header-logo"
-            aria-label="website's logo; link to main page"
-          >
-            <svg class="icon-logo" width="60" height="60">
-              <use href="./image/sprite_icons.svg#icon-logo"></use>
-            </svg>
-          </a>
-          <ul class="header-lst">
-            <li class="header-item">
-              <a
-                href="#"
-                class="header-link current"
-                aria-label="link to the page About us"
-                >About us</a
-              >
-            </li>
-            <li class="header-item">
-              <a href="#" class="header-link" aria-label="link to the page Tours"
-                >Tours</a
-              >
-            </li>
-            <li class="header-item">
-              <a href="#" class="header-link" aria-label="link to the page Reviews"
-                >Reviews</a
-              >
-            </li>
-            <li class="header-item">
-              <a href="#" class="header-link" aria-label="link to the page Gallery"
-                >Gallery</a
-              >
-            </li>
-            <li class="header-item">
-              <a href="#" class="header-link" aria-label="link to the page Contacts"
-                >Contacts</a
-              >
-            </li>
-          </ul>
-          <button
-            class="hero-burger is-open"
-            type="button"
-            aria-label="button to open menu"
-          >
-            <svg class="icon-burger" width="40" height="40">
-              <use href="./image/sprite_icons.svg#icon-burger"></use>
-            </svg>
-          </button>
-        </nav>
-      </div>
-    </header>
 
     <main class="main">
       <section class="hero">
@@ -1142,7 +1154,7 @@
 
     <!-- book tour window -->
 
-    <div class="book-overlay is-open">
+    <div class="book-overlay">
       <div class="book-tour-window">
         <button type="button" class="close-book-tr-window">
           <svg class="icon-close" width="30" height="30">

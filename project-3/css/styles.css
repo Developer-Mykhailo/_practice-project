@@ -120,6 +120,13 @@ body {
   display: none;
 }
 
+.hero-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
 @media screen and (min-width: 768px) {
   .header-container {
     top: 24px;
@@ -167,15 +174,46 @@ body {
     transition: opacity 0.25s ease-in-out;
   }
 }
+.mob-overlay {
+  position: absolute;
+  visibility: hidden;
+}
+
+.mob-overlay.is-open {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 774px;
+  background-image: url(../image/hero/hero_bg-mb-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  visibility: visible;
+}
+.mob-overlay.is-open .hero-burger-close {
+  position: absolute;
+  top: 20px;
+  right: 32px;
+}
+.mob-overlay.is-open .hero-burger-close .burger-icon-close {
+  fill: var(--white);
+}
+
 .mob-menu {
   position: absolute;
   top: 0;
   left: 0;
   width: 233px;
+  height: 774px;
   padding-top: 132px;
   padding-left: 32px;
   padding-bottom: 113px;
   background: rgba(32, 35, 33, 0.7);
+}
+.mob-menu .logo {
+  position: absolute;
+  top: 20px;
+  left: 32px;
 }
 
 .mob-lst {
@@ -218,8 +256,12 @@ body {
 
 /* #region TABLET*/
 @media screen and (min-width: 768px) {
+  .mob-overlay.is-open {
+    height: 803px;
+  }
   .mob-menu {
     width: 374px;
+    height: 803px;
     padding-top: 178px;
     padding-left: 82px;
     padding-bottom: 179px;
@@ -242,7 +284,7 @@ body {
 /* #endregion TABLET*/
 /* #region DESK*/
 @media screen and (min-width: 1200px) {
-  .mob-menu {
+  .mob-overlay {
     display: none;
   }
 }
@@ -1418,6 +1460,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(32, 35, 33, 0.5);
+  opacity: 0;
   pointer-events: none;
   transition: opacity 250ms ease-in-out;
 }
@@ -1445,8 +1488,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  transition: background-color 250ms ease-in-out;
 }
 .book-tour-window .close-book-tr-window .icon-close {
   fill: var(--dark);
@@ -1540,9 +1581,6 @@ body {
     font-size: 20px;
     margin-bottom: 24px;
   }
-  .bk-tour-imput::placeholder {
-    color: var(--dark);
-  }
   .checkbox-book-input + label span {
     margin-right: 12px;
   }
@@ -1555,3 +1593,46 @@ body {
   }
 }
 /* #endregion TABLET*/
+/* #region DESK*/
+@media screen and (min-width: 1200px) {
+  .book-tour-window {
+    width: 774px;
+    padding: 116px 100px 60px 100px;
+  }
+  .book-tour-window .close-book-tr-window {
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .book-tour-ttl {
+    font-size: 60px;
+    margin-bottom: 28px;
+  }
+  .book-tour-descr {
+    max-width: 523px;
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .bk-tour-imput {
+    width: 575px;
+    height: 37px;
+    padding-left: 7px;
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+  .checkbox-book-input + label {
+    font-size: 24px;
+  }
+  #check-tour-3 + label {
+    margin-bottom: 44px;
+  }
+  #check-tour-3 + label + .rect-btn {
+    width: 575px;
+    height: 69px;
+  }
+}
+/* #endregion DESK*/
