@@ -1638,12 +1638,11 @@ body {
 /* #endregion DESK*/
 .tr-dt-overlay {
   position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   left: 0;
   width: 100%;
-  height: 624px;
-  background-color: var(--white);
+  height: 100%;
+  backdrop-filter: blur(10px);
   opacity: 0;
   pointer-events: none;
 }
@@ -1654,53 +1653,44 @@ body {
 }
 
 .tr-dt-window {
-  position: relative;
-  padding-top: 56px;
-  padding-left: 48px;
-  width: 100%;
-  height: 480px;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/tours/tr-dt-img/tr-dt-img-1-min.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 28px;
+  background-color: var(--white);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 28px;
 }
 
-@media screen and (max-width: 767px) and (min-resolution: 2x) {
-  .tr-dt-window {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/tours/tr-dt-img/tr-dt-img-1@2x-min.jpg);
-  }
-}
-.close-dt-window {
+.close-dt-window-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 12px;
-  right: 12px;
+  right: 32px;
+  z-index: 1;
 }
-.close-dt-window .close-dt-icon {
+.close-dt-window-btn .close-dt-icon {
   width: 30px;
   height: 30px;
   fill: var(--white);
 }
 
-.dt-switch {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.dt-ttl {
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--white);
-  margin-bottom: 12px;
-}
-
 .dt-lst {
+  width: 315px;
+  height: 480px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/tours/tr-dt-img/tr-dt-img-1-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 56px;
+  padding-left: 48px;
+  padding-bottom: 118px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 28px;
 }
 .dt-lst li {
   font-weight: 500;
@@ -1708,7 +1698,13 @@ body {
   color: var(--white);
 }
 
-.dt-itm:first-child {
+.dt-itm .dt-ttl {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.dt-itm:nth-child(2) {
   width: 278px;
   height: 48px;
   background: var(--matte);
@@ -1724,8 +1720,69 @@ body {
   font-size: 16px;
   text-align: center;
   color: var(--dark);
+}
+
+.dt-content-slider {
+  display: flex;
+  width: 200%;
   margin-bottom: 16px;
 }
-.tr-dt-price + .rect-btn {
+
+.dt-content {
+  margin-right: 30px;
+}
+
+.tr-dt-window .rect-btn {
   margin: 0 auto;
+}
+
+.dt-switch {
+  position: relative;
+}
+
+.dt-switch input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.dt-switch-wrapper {
+  position: absolute;
+  bottom: 68px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+.dt-switch-wrapper label {
+  width: 12px;
+  height: 12px;
+  background-color: #a3a5a3;
+  border-radius: 50%;
+}
+.dt-switch-wrapper label:hover, .dt-switch-wrapper label:focus {
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+#dt-imp-1:checked ~ .dt-switch-wrapper .label-imp-1,
+#dt-imp-2:checked ~ .dt-switch-wrapper .label-imp-1,
+#dt-imp-2:checked ~ .dt-switch-wrapper .label-imp-2,
+#dt-imp-3:checked ~ .dt-switch-wrapper .label-imp-1,
+#dt-imp-3:checked ~ .dt-switch-wrapper .label-imp-2,
+#dt-imp-3:checked ~ .dt-switch-wrapper .label-imp-3 {
+  background-color: var(--white);
+}
+
+#dt-imp-1:checked ~ .dt-content-slider {
+  margin-left: 0;
+}
+
+#dt-imp-2:checked ~ .dt-content-slider {
+  margin-left: -345px;
+}
+
+#dt-imp-3:checked ~ .dt-content-slider {
+  margin-left: -690px;
 }

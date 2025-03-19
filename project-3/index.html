@@ -1241,8 +1241,8 @@
 
     <!-- details tour window-->
     <div class="tr-dt-overlay is-open">
-      <div class="tr-dt-window">
-        <button class="close-dt-window">
+      <div class="container tr-dt-window">
+        <button class="close-dt-window-btn">
           <svg class="close-dt-icon" width="40" height="40">
             <use href="./image/sprite_icons.svg#icon-close"></use>
           </svg>
@@ -1252,28 +1252,66 @@
           <input type="radio" class="dt-imput" name="tr-select" id="dt-imp-1" checked />
           <input type="radio" class="dt-imput" name="tr-select" id="dt-imp-2" />
           <input type="radio" class="dt-imput" name="tr-select" id="dt-imp-3" />
+          <!--  -->
+
+          <div class="dt-content-slider">
+            <div class="dt-content">
+              <ul class="dt-lst">
+                <li class="dt-itm"><h3 class="dt-ttl">Ascent to Hoverla</h3></li>
+                <li class="dt-itm">1 day</li>
+                <li class="dt-itm">Departure from Lviv</li>
+                <li class="dt-itm">Manyava Hermitage</li>
+                <li class="dt-itm">Manyava waterfall</li>
+                <li class="dt-itm">Arrival to Bukovel</li>
+                <li class="dt-itm">Check-in</li>
+                <li class="dt-itm">Dinner</li>
+                <li class="dt-itm">Evening by the fireplace</li>
+              </ul>
+
+              <p class="tr-dt-price">UAH 4,499/person</p>
+            </div>
+
+            <div class="dt-content">
+              <ul class="dt-lst">
+                <li class="dt-itm"><h3 class="dt-ttl">Ascent to Hoverla</h3></li>
+                <li class="dt-itm">2 day</li>
+                <li class="dt-itm">Breakfast</li>
+                <li class="dt-itm">Ascent to Hoverla</li>
+                <li class="dt-itm">Dinner</li>
+                <li class="dt-itm">Reacretion</li>
+                <li class="dt-itm">Sauna</li>
+                <li class="dt-itm">Dinner</li>
+              </ul>
+
+              <p class="tr-dt-price">UAH 4,499/person</p>
+            </div>
+
+            <div class="dt-content">
+              <ul class="dt-lst">
+                <li class="dt-itm"><h3 class="dt-ttl">Ascent to Hoverla</h3></li>
+                <li class="dt-itm">3 day</li>
+                <li class="dt-itm">Breakfast</li>
+                <li class="dt-itm">A walk around Bukovel</li>
+                <li class="dt-itm">Check out from the hotel</li>
+                <li class="dt-itm">Yaremche</li>
+                <li class="dt-itm">Arrival in Lviv</li>
+              </ul>
+
+              <p class="tr-dt-price">UAH 4,499/person</p>
+            </div>
+          </div>
+
+          <div class="dt-switch-wrapper">
+            <label class="label-imp-1" for="dt-imp-1"></label>
+            <label class="label-imp-2" for="dt-imp-2"></label>
+            <label class="label-imp-3" for="dt-imp-3"></label>
+          </div>
         </div>
 
-        <div class="dt-content">
-          <h3 class="dt-ttl">Ascent to Hoverla</h3>
-
-          <ul class="dt-lst">
-            <li class="dt-itm">1 day</li>
-            <li class="dt-itm">Departure from Lviv</li>
-            <li class="dt-itm">Manyava Hermitage</li>
-            <li class="dt-itm">Manyava waterfall</li>
-            <li class="dt-itm">Arrival to Bukovel</li>
-            <li class="dt-itm">Check-in</li>
-            <li class="dt-itm">Dinner</li>
-            <li class="dt-itm">Evening by the fireplace</li>
-          </ul>
-        </div>
+        <button type="button" class="rect-btn" aria-label="button to book a tour">
+          Book a tour
+        </button>
       </div>
-
-      <p class="tr-dt-price">UAH 4,499/person</p>
-      <button type="button" class="rect-btn" aria-label="button to book a tour">
-        Book a tour
-      </button>
     </div>
   </body>
 </html>
