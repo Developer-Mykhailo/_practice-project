@@ -1675,15 +1675,12 @@ body {
   width: 30px;
   height: 30px;
   fill: var(--white);
+  fill: #000606;
 }
 
-.dt-lst {
+.dt-content ul {
   width: 315px;
   height: 480px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/tours/tr-dt-img/tr-dt-img-1-min.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   padding-top: 56px;
   padding-left: 48px;
   padding-bottom: 118px;
@@ -1692,12 +1689,50 @@ body {
   gap: 12px;
   margin-bottom: 28px;
 }
-.dt-lst li {
+.dt-content ul li {
   font-weight: 500;
   font-size: 16px;
   color: var(--white);
 }
 
+/* #region  background of list*/
+.dt-lst-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/tours/tr-dt-img/mob/hoverla-mob/hoverla-mob-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (resolution: 2x) {
+  .dt-lst-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/tours/tr-dt-img/mob/hoverla-mob/hoverla-mob-1@2x.jpg);
+  }
+}
+.dt-lst-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/tours/tr-dt-img/mob/hoverla-mob/hoverla-mob-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (resolution: 2x) {
+  .dt-lst-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/tours/tr-dt-img/mob/hoverla-mob/hoverla-mob-2@2x.jpg);
+  }
+}
+.dt-lst-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/tours/tr-dt-img/mob/hoverla-mob/hoverla-mob-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (resolution: 2x) {
+  .dt-lst-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../image/tours/tr-dt-img/mob/hoverla-mob/hoverla-mob-3@2x.jpg);
+  }
+}
+/* #endregion  background of list*/
 .dt-itm .dt-ttl {
   font-weight: 600;
   font-size: 18px;
@@ -1786,3 +1821,6 @@ body {
 #dt-imp-3:checked ~ .dt-content-slider {
   margin-left: -690px;
 }
+
+/* #region tablet*/
+/* #endregion tablet*/
